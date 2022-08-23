@@ -1,1 +1,1 @@
-node_modules
+# UI for website fskorusa.archidiecezja.wroc.pl
