@@ -1,1 +1,0 @@
-# UI for website fskorusa.archidiecezja.wroc.pl
