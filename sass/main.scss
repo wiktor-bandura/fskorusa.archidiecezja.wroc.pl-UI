@@ -1,3 +1,10 @@
+@import "abstracts/variables";
+@import "abstracts/mixins";
+
+@import "layout/headings";
+
+@import "base/base";
+
 body {
-    background-color: #333;
+    background-color: $color-primary;
 }

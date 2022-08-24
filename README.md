@@ -1,4 +1,4 @@
-# UI for website fskourse.archidiecezja.wroc.pl
+# UI for website fskoursa.archidiecezja.wroc.pl
 
 ## Dependencies: 
 
