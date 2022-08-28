@@ -1,0 +1,14 @@
+.heading {
+    
+    &-1 { font-size: 1.5rem; }
+    &-2 { font-size: 2.5rem; }
+    &-3 { font-size: 2rem; }
+
+    &--primary {
+        color: $color-primary;
+    }
+
+    &--light {
+        color: $font-color-light;
+    }
+}

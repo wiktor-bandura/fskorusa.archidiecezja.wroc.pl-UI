@@ -1,0 +1,40 @@
+.page-header {
+    height: 100vh;
+    position: relative;
+}
+
+.navigation {
+    position: fixed;
+    display: none;
+}
+
+.page-welcome-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    background-image: 
+        linear-gradient(rgba(#424242, .48), rgba(#424242, .48)), 
+        url(../img/background-photo-large.jpg);
+    background-size: cover;
+
+    &__socialmedia-icons {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        padding: 1.5rem;
+    }
+
+    &__socialmedia-link {
+        display: block;
+    }
+
+    &__socialmedia-icon {
+        max-width: 2rem;
+        max-height: 3.2rem;
+        fill: $font-color-light;
+        
+    }
+}

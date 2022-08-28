@@ -1,0 +1,23 @@
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    color: $font-color-dark;
+    font-size: 62.5%;
+    font-family: $font-text;
+    font-weight: 300;
+    font-smooth: antialiased;
+    -webkit-font-smoth: antialiased;
+    -moz-font-smooth: antialiased;
+}
+
+::selection {
+    background-color: $color-primary;
+    color: $font-color-light;
+}

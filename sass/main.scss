@@ -1,10 +1,9 @@
+
 @import "abstracts/variables";
 @import "abstracts/mixins";
-
+@import "layout/headings";
+@import "layout/header";
 @import "layout/layout";
-
+@import "base/utilities";
 @import "base/base";
-
-body {
-    background-color: $color-primary;
-}
+@import "components/button";
