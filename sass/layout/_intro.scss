@@ -1,0 +1,33 @@
+.section-intro {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 1.5rem 4rem rgba($font-color-dark, .1);
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 50rem;
+    }
+
+    &__content-frame {
+        padding: 5rem;
+        text-align: right;
+    }
+
+    &__image {
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        margin-left: auto;
+        padding: 1rem;
+        box-shadow: 0 1.5rem 4rem rgba($font-color-dark, .1);
+    }
+
+    &__text {
+        font-size: 1.1rem;
+        margin-right: auto;
+    }
+}

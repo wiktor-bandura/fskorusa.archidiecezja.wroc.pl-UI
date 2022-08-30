@@ -12,9 +12,13 @@ body {
     font-size: 62.5%;
     font-family: $font-text;
     font-weight: 300;
-    font-smooth: antialiased;
-    -webkit-font-smoth: antialiased;
-    -moz-font-smooth: antialiased;
+    font-smooth: always;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+
+    img {
+        width: 300px;
+    }
 }
 
 ::selection {
