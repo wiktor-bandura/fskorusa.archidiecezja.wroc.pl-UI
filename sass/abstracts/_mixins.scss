@@ -1,0 +1,9 @@
+@mixin timelineGridOne {
+    grid-column: 1 / 2;
+    text-align: right;
+}
+
+@mixin timelineGridTwo {
+    grid-column: 3 / 4;
+    text-align: left;
+}

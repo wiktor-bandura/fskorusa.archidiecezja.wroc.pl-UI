@@ -1,0 +1,87 @@
+.section-timeline {
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: min-content 1rem min-content;
+    grid-template-rows: min-content repeat(5, min-content);
+    grid-gap: 2rem;
+
+    &__title {
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 300;
+        grid-column: 1/-1;
+    }
+
+    &__stage-wrapper {
+
+        .heading-3,
+        .heading-4 {
+            color: $color-primary;
+            text-transform: uppercase;
+            font-weight: 300;
+        }
+        
+        &--1 {
+            @include timelineGridOne;
+            grid-row: 2 / 3;
+        }
+
+        &--2 {
+            @include timelineGridTwo;
+            grid-row: 3 / 4;
+        }
+
+        &--3 {
+            @include timelineGridOne;
+            grid-row: 4 / 5;
+        }
+
+        &--4 {
+            @include timelineGridTwo;
+            grid-row: 5 / 6;
+        }
+
+        &--5 {
+            @include timelineGridOne;
+            grid-row: 6 / 7;
+        }
+
+        &-text {
+            margin-top: 1rem;
+            font-size: 1.2rem;
+        }
+    }
+
+    &__stage-img {
+        display: block;
+        object-fit: cover;
+
+        &--1 {
+            @include timelineGridTwo;
+        }
+
+        &--2 {
+            @include timelineGridOne;
+        }
+
+        &--3 {
+            @include timelineGridTwo;
+        }
+
+        &--4 {
+            @include timelineGridOne;
+        }
+
+        &--5 {
+            @include timelineGridTwo;
+        }
+    }
+
+    &__line {
+        background-color: $color-primary;
+        grid-column: 2 / 3;
+        grid-row: 2 / -1;
+    }
+}

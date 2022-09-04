@@ -4,12 +4,12 @@
     align-items: center;
     justify-content: center;
     box-shadow: 0 1.5rem 4rem rgba($font-color-dark, .1);
+    background-color: #fafafa;
 
     &__wrapper {
         display: flex;
         align-items: center;
         justify-content: center;
-        max-width: 50rem;
     }
 
     &__content-frame {
@@ -22,12 +22,12 @@
         object-fit: cover;
         display: block;
         margin-left: auto;
-        padding: 1rem;
+        padding: 2rem;
         box-shadow: 0 1.5rem 4rem rgba($font-color-dark, .1);
     }
 
     &__text {
-        font-size: 1.1rem;
+        font-size: 1.5rem;
         margin-right: auto;
     }
 }

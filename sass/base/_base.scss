@@ -6,15 +6,19 @@
     padding: 0;
 }
 
+html {
+    font-size: 62.5%;
+}
+
 body {
     box-sizing: border-box;
     color: $font-color-dark;
-    font-size: 62.5%;
     font-family: $font-text;
     font-weight: 300;
     font-smooth: always;
     -webkit-font-smoothing: antialiased;
     -moz-font-smoothing: antialiased;
+    overflow-x: hidden;
 
     img {
         width: 300px;

@@ -1,11 +1,13 @@
 @import "abstracts/animations";
 @import "abstracts/variables";
 @import "abstracts/mixins";
+@import "layout/memories";
+@import "layout/timeline";
 @import "layout/intro";
 @import "layout/headings";
 @import "layout/header";
 @import "layout/layout";
 @import "base/utilities";
 @import "base/base";
-@import "components/timeline-step";
+@import "components/memory";
 @import "components/button";

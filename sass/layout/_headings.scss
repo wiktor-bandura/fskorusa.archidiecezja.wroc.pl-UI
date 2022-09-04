@@ -1,7 +1,8 @@
 .heading { 
-    &-1 { font-size: 1.5rem; }
-    &-2 { font-size: 2.5rem; }
-    &-3 { font-size: 2rem; }
+    &-1 { font-size: 2.5rem; }
+    &-2 { font-size: 3.5rem; }
+    &-3 { font-size: 3rem; }
+    &-4 { font-size: 2rem }
 
     &--primary {
         color: $color-primary;
@@ -12,9 +13,10 @@
     }
 
     &--intro {
-        font-size: 1.8rem;
+        font-size: 2.2rem;
         display: inline-block;
         background-image: linear-gradient(to right, $color-primary, darken($color-primary, .7));
+        background-clip: text;
         -webkit-background-clip: text;
         color: transparent;
     }

@@ -1,4 +1,6 @@
 .btn { 
+    transition: transform .2s;
+
     &:link, 
     &:visited {
         display: block;
@@ -9,6 +11,10 @@
         text-align: center;
         text-transform: uppercase;
         cursor: pointer;
+    }
+
+    &:hover {
+        transform: translateY(2px);
     }
 
     &--primary {
