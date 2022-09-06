@@ -27,7 +27,9 @@
     }
 
     &__text {
-        font-size: 1.5rem;
+        font-size: 2rem;
         margin-right: auto;
+        font-weight: lighter;
+        font-family: $font-heading;
     }
 }

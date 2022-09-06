@@ -1,0 +1,12 @@
+.line-break {
+    border-radius: 2px;
+    width: 100%;
+
+    &--primary {
+        border: 2px solid $color-primary;
+    }
+
+    &--light {
+        border: 2px solid $font-color-light;
+    }
+}

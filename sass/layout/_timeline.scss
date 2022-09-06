@@ -6,7 +6,7 @@
     display: grid;
     grid-template-columns: 1fr 1rem 1fr;
     grid-template-rows: min-content repeat(5, min-content);
-    grid-gap: 2rem;
+    grid-gap: 3rem;
 
     &__title {
         text-align: center;
@@ -54,6 +54,7 @@
             font-size: 2rem;
             font-family: $font-heading;
             font-weight: lighter;
+            line-height: 1.2em;
         }
     }
 
