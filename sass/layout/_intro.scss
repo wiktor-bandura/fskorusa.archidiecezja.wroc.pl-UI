@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: center;
     box-shadow: 0 1.5rem 4rem rgba($font-color-dark, .1);
-    background-color: #fafafa;
+    background-color: $color-grey-light;
 
     &__wrapper {
         display: flex;

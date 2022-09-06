@@ -1,0 +1,22 @@
+.section-movie { 
+    position: relative;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    color: $color-primary;
+    padding: 3rem;
+    font-weight: 200;
+
+    &__text {
+        font-size: 3rem;
+        font-family: $font-heading;
+    }
+
+    &__movie-frame {
+        width: 60vw;
+        height: 30vw;
+        box-shadow: 0 1.5rem 4rem rgba(#000, .2);
+        line-height: 2px;
+    }
+}

@@ -5,16 +5,17 @@
     &:visited {
         display: block;
         width: max-content;
-        padding: 1rem 2rem;
-        font-size: 1.5rem;
+        padding: 1.5rem 2.5rem;
+        font-size: 2rem;
         text-decoration: none;
         text-align: center;
         text-transform: uppercase;
         cursor: pointer;
     }
 
-    &:hover {
-        transform: translateY(2px);
+    &:hover,
+    &:focus {
+        transform: translateY(4px);
     }
 
     &--primary {
@@ -25,5 +26,6 @@
     &--light {
         color: $color-primary;
         background-color: $font-color-light;
+        border: 2px solid $color-primary;
     }
 }
