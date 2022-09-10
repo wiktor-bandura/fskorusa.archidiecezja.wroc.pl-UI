@@ -4,10 +4,30 @@
     box-sizing: inherit;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 html {
+
+    // DEFINES REM VALUE
+
     font-size: 62.5%;
+
+    @media only screen and (max-width: $bp-small) {
+        font-size: 37.5%;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+        font-size: 50%;
+    }
+
+    @media only screen and (max-width: $bp-big) {
+        font-size: 56.25%;
+    }
+
+    @media only screen and (min-width: $bp-large) {
+        font-size: 75%;
+    }
 }
 
 body {
