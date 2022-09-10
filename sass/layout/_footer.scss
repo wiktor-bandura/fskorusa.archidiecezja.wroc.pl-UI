@@ -1,0 +1,45 @@
+.footer {
+    background-color: $color-primary;
+    padding: 6rem;
+    color: $font-color-light;
+    text-align: center;
+
+    .footer-nav {
+
+        &__list {
+            display: inline-flex;
+            list-style-type: none;
+        }
+
+        &__item {
+
+            &:not(:last-child) {
+                margin-right: 1rem;
+            }
+        }
+        
+        &__link {
+            display: block;
+            color: currentColor;
+            text-transform: uppercase;
+            font-size: 2rem;
+            text-decoration: none;
+            transition: all .2s;
+            padding: 1.5rem;
+
+            &:hover {
+                background-color: $font-color-light;
+                color: $color-primary;
+                box-shadow: 0 1.5rem 4rem rgba($font-color-dark, .1);
+            }
+        }
+    }
+
+    .copy {
+        font-size: 2rem;
+    }
+
+    .author-link {
+        color: currentColor;
+    }
+}

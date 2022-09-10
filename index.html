@@ -138,12 +138,12 @@
                 <div class="section-memories__form-wrapper u-margin-bottom-large">
 
                     <h2 class="heading heading-4 heading-4 heading--light">Ksiądz Prałat w naszej pamięci</h2>
-                    <hr class="line-break line-break--light u-margin-bottom-small">
+                    <hr class="line-break line-break--light u-margin-bottom-small u-margin-top-small">
                     <h3 class="heading heading-3 heading--light">Podziel się wspomnieniem</h3>
 
                     <form action="#" class="form u-margin-top-medium">
                         <div class="form-group u-margin-bottom-small">
-                            <input type="text" class="form__input" placeholder="Imię" id="name" required>
+                            <input type="text" class="form__input" placeholder="Imię" id="name" autocomplete="off" required>
                             <label for="name" class="form__label">Imię</label>
                         </div>
 
@@ -152,7 +152,7 @@
                             <label for="memory" class="form__label">Wspomnienie</label>
                         </div>
 
-                        <input type="submit" class="btn btn--light" value="WYŚLIJ">
+                        <input type="submit" class="btn btn--light form__submit" value="WYŚLIJ">
                     </form>
                 </div>
                 <div class="section-memories__memories">
@@ -262,7 +262,7 @@
                     <a href="https://online.pubhtml5.com/jzgy/lbpg/#p=1" target="_blank" class="btn btn--light">Czytaj</a>
                 </div>
             </section>
-            <section class="section-movie u-margin-top-large" id="movie">
+            <section class="section-movie u-margin-top-large u-margin-bottom-large" id="movie">
                 <h2 class="heading heading-2 heading--primary u-margin-top-small">Film pamiątkowy</h2>
                 <hr class="line-break line-break--primary u-margin-top-small">
                 <p class="section-movie__text u-margin-top-small">
@@ -275,9 +275,20 @@
             </section>
         </main>
         <footer class="footer">
-            <h3 class="heading heading-3">Ksiądz Prałat Franciszek Skorusa&nbsp;&ndash;&nbsp;Strona Internetowa</h3>
+            <h3 class="heading heading-4 u-margin-bottom-small">Ksiądz Prałat Franciszek Skorusa&nbsp;&ndash;&nbsp;Strona Internetowa</h3>
+            <hr class="line-break line-break--light">
 
-            <p class="copy">Copyright &copy; 2022</p>
+                <ul class="footer-nav__list">
+                    <li class="footer-nav__item"><a href="" class="footer-nav__link">Linia czasu</a></li>
+                    <li class="footer-nav__item"><a href="" class="footer-nav__link">Wspomnienia</a></li>
+                    <li class="footer-nav__item"><a href="" class="footer-nav__link">Galeria</a></li>
+                    <li class="footer-nav__item"><a href="" class="footer-nav__link">Książka</a></li>
+                    <li class="footer-nav__item"><a href="" class="footer-nav__link">Film</a></li>
+                </ul>
+
+            <hr class="line-break line-break--light u-margin-bottom-small">
+            <p class="copy">Copyright &copy; 2022. Design i wykonanie <a class="author-link" href="https://www.linkedin.com/in/wiktor-bandura" target="_blank">Wiktor Bandura</a></p>
+            
             
         </footer>
     </div>

@@ -76,9 +76,12 @@
         padding: 2rem;
         text-transform: uppercase;
         text-align: center;
+        transition: all .2s;
 
         &:hover {
-            background-color: $color-primary;
+            background-color: $font-color-light;
+                color: $color-primary;
+                box-shadow: 0 1.5rem 4rem rgba($font-color-dark, .1);
         }
     }
 
