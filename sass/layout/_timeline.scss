@@ -8,6 +8,15 @@
     grid-template-rows: min-content repeat(5, min-content);
     grid-gap: 3rem;
 
+    @media only screen and (max-width: $bp-medium) {
+        grid-template-columns: 1fr;
+        grid-template-columns: auto;
+    }
+
+    @media only screen and (min-width: $bp-large) {
+        max-width: 1200px;
+    }
+
     &__title {
         text-align: center;
         text-transform: uppercase;
@@ -55,6 +64,32 @@
             font-family: $font-heading;
             font-weight: lighter;
             line-height: 1.2em;
+
+            
+        }
+
+        @media only screen and (max-width: $bp-medium) {
+            grid-column: 1/-1;
+
+            &--1 {
+                grid-row: 2/3;
+            }
+    
+            &--2 {
+                grid-row: 4/5;
+            }
+    
+            &--3 {
+                grid-row: 6/7;
+            }
+    
+            &--4 {
+                grid-row: 8/9;
+            }
+    
+            &--5 {
+                grid-row: 10/11;
+            }
         }
     }
 
@@ -82,11 +117,39 @@
         &--5 {
             @include timelineGridTwo;
         }
+
+        @media only screen and (max-width: $bp-medium) {
+            grid-column: 1/-1;
+
+            &--1 {
+                grid-row: 3/4;
+            }
+    
+            &--2 {
+                grid-row: 5/6;
+            }
+    
+            &--3 {
+                grid-row: 7/8;
+            }
+    
+            &--4 {
+                grid-row: 9/10;
+            }
+    
+            &--5 {
+                grid-row: 11/12;
+            }
+        }
     }
 
     &__line {
         background-color: $color-primary;
         grid-column: 2 / 3;
         grid-row: 2 / -1;
+
+        @media only screen and (max-width: $bp-medium) {
+            display: none;
+        }
     }
 }

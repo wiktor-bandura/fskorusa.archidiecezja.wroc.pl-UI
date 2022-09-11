@@ -30,4 +30,12 @@
         padding: 10rem;
         font-weight: lighter;
     }
+
+    @media only screen and (max-width: $bp-small) {
+        flex-direction: column-reverse;
+
+        &__description {
+            padding: 3rem;
+        }
+    }
 }

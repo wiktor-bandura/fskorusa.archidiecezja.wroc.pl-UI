@@ -10,11 +10,23 @@
         display: flex;
         align-items: center;
         justify-content: center;
+
+        @media only screen and (max-width: $bp-medium) {
+            flex-direction: column;
+        }
     }
 
     &__content-frame {
         padding: 5rem;
         text-align: right;
+
+        @media only screen and (max-width: $bp-medium) {
+            text-align: left;
+        }
+
+        @media only screen and (min-width: $bp-large) {
+            max-width: 1200px;
+        }
     }
 
     &__image {
@@ -24,6 +36,10 @@
         margin-left: auto;
         padding: 2rem;
         box-shadow: 0 1.5rem 4rem rgba($font-color-dark, .1);
+
+        @media only screen and (max-width: $bp-medium) {
+            margin: 0 auto;
+        }
     }
 
     &__text {

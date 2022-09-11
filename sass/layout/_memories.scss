@@ -22,8 +22,6 @@
     .form {
         display: block;
 
-        
-
         &__input {
             background: none;
             resize: none;
@@ -59,6 +57,7 @@
             &:hover {
                 background-color: rgba($color-primary, .7);
                 color: $font-color-light;
+                transform: translate(0);
             }
         }
     }
