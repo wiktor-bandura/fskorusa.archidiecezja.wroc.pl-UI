@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
     <meta name="description" content="Strona internetowa poświęcona pamięci śp. Księdza Prałata Franciszka Skorusy, który był wieloletnim proboszczem parafii pw. Wniebowzięcia Maryi Panny we Wrocławiu - Muchoborze Małym oraz budowniczym kościoła.">
     <meta name="keywords" content="Ksiądz Prałat Franciszek Skorusa, Wrocław, Muchobór Mały">
     <title>Ksiądz Prałat Franciszek Skorusa</title>
@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&family=Rosario&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="/css/style.css">
+    <script tyle="module" src="/js/modal.js" defer></script>
 </head>
 <body>
     <div class="page-container">
@@ -76,7 +77,7 @@
                 <h2 class="heading-2 heading--primary section-timeline__title">Życie</h2>
                 <div class="section-timeline__stage-wrapper section-timeline__stage-wrapper--1">
                     <h3 class="heading heading-3">1940</h3>
-                    <h4 class="heading heading-4">Przyjście na świat</h4>
+                    <h4 class="heading heading-4">Przyjście na świat i rodzina</h4>
                     <hr class="line-break line-break--primary u-margin-top-small">
                     <p class="section-timeline__stage-wrapper-text">
                         Ksiądz Prałat Franciszek Skorusa to pierwszy proboszcz parafii oraz budowniczy kościoła Najświętszej Maryi Panny Nieustającej Pomocy we Wrocławiu-Muchoborze Małym.
@@ -148,6 +149,11 @@
                         </div>
 
                         <div class="form-group u-margin-bottom-small">
+                            <input type="text" class="form__input" placeholder="Niepowtarzalny tytuł" id="title" autocomplete="off" required>
+                            <label for="name" class="form__label">Niepowtarzalny tytuł</label>
+                        </div>
+
+                        <div class="form-group u-margin-bottom-small">
                             <textarea class="form__input form__input--textarea" id="memory" placeholder="Wspomnienie" required></textarea>
                             <label for="memory" class="form__label">Wspomnienie</label>
                         </div>
@@ -156,7 +162,7 @@
                     </form>
                 </div>
                 <div class="section-memories__memories">
-                    <div class="memory">
+                    <div class="memory" data-title="Dwa obrazki">
                         <h4 class="memory__username">Tadeusz Inglot</h4>
                         <h5 class="heading--5 memory__title">Dwa obrazki</h5>
                         <p class="memory__content">
@@ -166,7 +172,7 @@
                             Czytaj całość
                         </span>
                     </div>
-                    <div class="memory">
+                    <div class="memory" data-title="VI rocznica">
                         <h4 class="memory__username">Ewa Naleśniak</h4>
                         <h5 class="heading--5 memory__title">VI rocznica</h5>
                         <p class="memory__content">
@@ -176,7 +182,7 @@
                             Czytaj całość
                         </span>
                     </div>
-                    <div class="memory">
+                    <div class="memory" data-title="Co dobrego słychać?">
                         <h4 class="memory__username">Mama ministrantów</h4>
                         <h5 class="heading--5 memory__title">Co dobrego słychać?</h5>
                         <p class="memory__content">
@@ -186,7 +192,7 @@
                             Czytaj całość
                         </span>
                     </div>
-                    <div class="memory">
+                    <div class="memory" data-title="Ostatnia rozmowa">
                         <h4 class="memory__username">Mariola Neustein</h4>
                         <h5 class="heading--5 memory__title">Ostatnia rozmowa</h5>
                         <p class="memory__content">
@@ -196,7 +202,7 @@
                             Czytaj całość
                         </span>
                     </div>
-                    <div class="memory">
+                    <div class="memory" data-title="Dobry gospodarz">
                         <h4 class="memory__username">Edward Lange</h4>
                         <h5 class="heading--5 memory__title">Dobry gospodarz</h5>
                         <p class="memory__content">
@@ -206,7 +212,7 @@
                             Czytaj całość
                         </span>
                     </div>
-                    <div class="memory">
+                    <div class="memory" data-title="Niedoszłe życzenia">
                         <h4 class="memory__username">Jan Inglot</h4>
                         <h5 class="heading--5 memory__title">Niedoszłe życzenia</h5>
                         <p class="memory__content">
@@ -216,7 +222,7 @@
                             Czytaj całość
                         </span>
                     </div>
-                    <div class="memory">
+                    <div class="memory" data-title="Droga Krzyżowa i wizyta kolędowa">
                         <h4 class="memory__username">Katarzyna Sobczak</h4>
                         <h5 class="heading--5 memory__title">Droga Krzyżowa i wizyta kolędowa</h5>
                         <p class="memory__content">
@@ -226,8 +232,8 @@
                             Czytaj całość
                         </span>
                     </div>
-                    <div class="memory">
-                        <h4 class="memory__username">Małgorzata Budzińska</h4>
+                    <div class="memory" data-title="W kolejce do spowiedzi">
+                        <h4 class="memory__username">W kolejce do spowiedzi</h4>
                         <h5 class="heading--5 memory__title">W kolejce do spowiedzi</h5>
                         <p class="memory__content">
                             Półmrok wrocławskiej katedry odgraniczał nas, stojących w kolejce do spowiedzi od słonecznego dnia. Skończyła się właśnie Msza Święta w intencji jakiegoś zmarłego kapłana...
@@ -276,12 +282,8 @@
         </main>
         <footer class="footer">
             <h3 class="heading heading-4 u-margin-bottom-medium">Ksiądz Prałat Franciszek Skorusa&nbsp;&ndash;&nbsp;Strona Internetowa</h3>
-
-
             <hr class="line-break line-break--light u-margin-bottom-large">
             <p class="copy">Copyright &copy; 2022. Design i wykonanie <a class="author-link" href="https://www.linkedin.com/in/wiktor-bandura" target="_blank">Wiktor Bandura</a></p>
-            
-            
         </footer>
     </div>
 </body>

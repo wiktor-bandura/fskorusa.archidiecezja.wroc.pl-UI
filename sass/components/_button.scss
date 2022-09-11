@@ -1,5 +1,9 @@
 .btn { 
     transition: all .2s;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+        
 
     &:link, 
     &:visited {
@@ -28,4 +32,6 @@
         background-color: $font-color-light;
         border: 2px solid $color-primary;
     }
+
+
 }
