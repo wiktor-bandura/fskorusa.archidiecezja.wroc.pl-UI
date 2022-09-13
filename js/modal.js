@@ -1,5 +1,4 @@
 const memoryBoxes = [...document.querySelectorAll('.section-memories__memories .memory')];
-const body = document.querySelector('body');
 
 const generateModal = (memory) => {
     const modalTitle = document.createElement('h4');
@@ -26,10 +25,10 @@ const generateModal = (memory) => {
         modalClose
     );
 
-    body.appendChild(modal);
+    document.body.appendChild(modal);
 
     modalClose.addEventListener('click', () => {
-        body.removeChild(modal);
+        document.body.removeChild(modal);
     })
 }
 

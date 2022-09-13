@@ -28,7 +28,7 @@
             border: none;
             outline: 2px solid $font-color-light;
             width: 30rem;
-            font-family: $font-heading;
+            font-family: $font-secondary;
             color: $font-color-light;
             text-transform: uppercase;
             padding: 1rem;
@@ -37,7 +37,7 @@
             margin-bottom: 1.5rem;
 
             &::-webkit-input-placeholder {
-                font-family: $font-heading;   
+                font-family: $font-secondary;   
                 color: $font-color-light;
             }
         }
