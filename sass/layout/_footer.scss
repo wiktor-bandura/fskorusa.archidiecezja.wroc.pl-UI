@@ -2,13 +2,31 @@
     background-image: linear-gradient(to right bottom, $gradient-color, $color-primary);
     padding: 6rem;
     color: $font-color-light;
-    text-align: center;
+    text-align: left;
+
+    &__contact-info-content {
+
+        span {
+            font-size: 2rem;
+            display: block;
+            line-height: 2;
+        }
+    }
+
+    &__contact-info-link {
+        display: inline-flex;
+        align-items: center;
+        color: currentColor;
+    }
+
+    &__socialmedia-icon {
+        width: 2.5rem;
+        height: 2.5rem;
+        fill: currentColor;
+        margin-right: 1rem;
+    }
 
     .copy {
         font-size: 2rem;
-    }
-
-    .author-link {
-        color: currentColor;
     }
 }

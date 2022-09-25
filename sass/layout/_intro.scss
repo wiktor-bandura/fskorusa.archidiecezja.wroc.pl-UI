@@ -20,6 +20,10 @@
         padding: 5rem;
         text-align: right;
 
+        span {
+            display: block;
+        }
+
         @media only screen and (max-width: $bp-medium) {
             text-align: left;
         }
