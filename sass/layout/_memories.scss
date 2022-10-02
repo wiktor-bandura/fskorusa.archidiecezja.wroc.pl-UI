@@ -6,17 +6,18 @@
     position: relative;
 
     &__form-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         width: 100%;
         padding: 7rem;
         // height: 30rem;
         // padding: 3rem;
-        background-image: linear-gradient(105deg, 
-                            rgba($color-primary, .7) 0%,
-                            rgba($color-primary, .7) 100%) ,
-                            url(../img/memory-form-photo.jpg);
+        background-image: linear-gradient(to right bottom, $color-primary, $gradient-color);
         background-size: cover;
         background-position: 25%;
         box-shadow: 0 1.5rem 4rem rgba(#000, .2);
+        text-align: center;
     }
 
     .form {
