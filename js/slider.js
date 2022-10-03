@@ -26,7 +26,6 @@ sliders.forEach((slider) => {
         if(e.target.classList.contains('section-timeline__prev-button')) {
             photos[counter].classList.remove('section-timeline__photo--active');
             counter--;
-            console.log(counter);
             counter < 0 ? counter = photos.length - 1 : null;
             photos[counter].classList.add('section-timeline__photo--active');
         }
@@ -34,7 +33,6 @@ sliders.forEach((slider) => {
         if(e.target.classList.contains('section-timeline__next-button')) {
             photos[counter].classList.remove('section-timeline__photo--active');
             counter++;
-            console.log(counter);
             counter > photos.length - 1 ? counter = 0 : null;
             photos[counter].classList.add('section-timeline__photo--active');
         }

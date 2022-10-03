@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="/css/style.css">
     <script type="module" src="/js/modal.js" defer></script>
     <script src="/js/slider.js" defer></script>
+    <script src="/js/cookies-popup.js" defer></script>
 </head>
 <body>
 <div class="page-container">
@@ -254,9 +255,9 @@
 
                 <form action="#" class="form u-margin-top-medium">
                     <div class="form-group u-margin-bottom-small">
-                        <input type="text" class="form__input" placeholder="Imię i nazwisko" id="name"
+                        <input type="text" class="form__input" placeholder="Podpis" id="name"
                                autocomplete="off" required>
-                        <label for="name" class="form__label">Imię i nazwisko</label>
+                        <label for="name" class="form__label">Podpis</label>
                     </div>
 
                     <div class="form-group u-margin-bottom-small">
@@ -364,10 +365,6 @@
                         </span>
                 </div>
             </div>
-
-            <a href="#" class="btn btn--primary">Czytaj wszystkie</a>
-        </section>
-
         </section>
         <section class="section-book u-margin-top-large u-margin-bottom-large" id="book">
             <a href="https://online.pubhtml5.com/jzgy/lbpg/#p=1" target="_blank" class="section-book__download-link">
@@ -447,6 +444,13 @@
         <div class="copy">&copy; 2022 Wszelkie prawa zastrzeżone.</div>
     </footer>
 </div>
+    <div class="consent-popup hidden">
+        <p class="consent-content">
+            Ta strona wykorzystuje pliki cookies, aby funkcjonować na najwyższym poziomie. Korzystając dalej z tej strony wyrażasz na to zgodę. Każdy może wyłączyć pliki cookies za pomocą ustawień przeglądarki
+        </p>
+
+        <button class="consent-btn btn btn--primary">Rozumiem</button>
+    </div>
 <script>
     document.querySelector('input[type=submit]').addEventListener('click', (e) => e.preventDefault());
 </script>
