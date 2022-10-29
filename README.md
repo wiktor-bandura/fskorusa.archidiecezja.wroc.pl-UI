@@ -1,6 +1,21 @@
 # UI for website fskoursa.archidiecezja.wroc.pl
+### Static website
+---
 
-## Dependencies: 
+### General info 📢
+
+This is webstie that I've made at the request of members of religiuos community from Wrocław.
+Website is memorial of priest who lived nad worked in Muchobór Mały in Wrocław.
+
+[VISIT fskorusa.archidiecezja.wroc.pl](http://www.fskorusa.archidiecezja.wroc.pl)
+
+##Technologies and Tools ⚙️ 
+- HTML
+- SCSS
+- BEM
+- JavaScript
+
+## Dependencies 📦
 
 - node-sass
 - autoprefixer
@@ -8,10 +23,13 @@
 - postcss-cli
 - concat
 
-## If you want to run this code locally:
-    - Clone this repo
-    - Open terminal in project folder 
-    - Run 'npm install'
-    - Run 'npm run start' 
-    - Done
+## If you want to run this code locally ⌨️
+
+
+| Command  📟  | Description 💬 |
+| ------------- |:-------------:|
+| npm install      | Install all dependencies |
+| npm run start     | Runs dev server      |
+| npm run build:css | Compiles, concatenates and minimizes scss files      |
+
 
