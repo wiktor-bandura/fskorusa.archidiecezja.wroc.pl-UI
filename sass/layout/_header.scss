@@ -52,8 +52,8 @@
 
     &__menu {
         position: fixed;
-        z-index: 3;
-        width: 30rem;
+        z-index: 15;
+        width: 40rem;
         height: 100vh;
         display: flex;
         align-items: center;
@@ -114,7 +114,7 @@
     flex-direction: column;
     background-image: 
         linear-gradient(rgba(#424242, .48), rgba(#424242, .48)), 
-        url(../img/background-photo-large.jpg);
+        url(../img/background-photo-large.webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

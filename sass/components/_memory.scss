@@ -1,5 +1,5 @@
 .memory {
-    padding: 4rem 2rem;
+    padding:  2rem;
     font-family: $font-secondary;
     background-color: $color-grey-light;
     box-shadow: 0 1.5rem 1rem rgba(#000, .1);
@@ -7,24 +7,25 @@
     position: relative;
     overflow: hidden;
     cursor: pointer;
+    border-radius: 4px;
 
     &__username {
         color: $color-primary;
         font-size: 2rem;
         text-transform: uppercase;
-        font-weight: lighter;
+        font-weight: normal;
         margin-bottom: 1rem;
     }
 
     &__title {
         font-size: 1.5rem;
         color: $color-primary;
-        font-weight: lighter;
+        font-weight: normal;
         margin-bottom: 1rem;
     }
 
     &__content {
-        font-size: 1.5rem;
+        font-size: 1.7rem;
     }
 
     &__hover {

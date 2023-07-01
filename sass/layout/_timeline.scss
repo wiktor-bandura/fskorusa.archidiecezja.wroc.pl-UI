@@ -6,7 +6,7 @@
     display: grid;
     grid-template-columns: 1fr 1rem 1fr;
     grid-template-rows: min-content repeat(5, min-content);
-    grid-gap: 3rem;
+    grid-gap: 4rem;
 
     @media only screen and (max-width: $bp-medium) {
         grid-template-columns: 1fr;
@@ -183,10 +183,10 @@
         width: 6rem;
         height: 6rem;
         text-decoration: none;
-        font-size: 2rem;
+        font-size: 3rem;
         padding: 1.2rem;
         border-radius: 50%;
-        left: 10%;
+        left: 0%;
         transform: translate(-50%, -50%);
         cursor: pointer;
         background-color: $color-primary;
@@ -194,7 +194,7 @@
 
         &::selection {
             background-color: transparent;
-            color: $color-primary;
+            color: inherit;
         }
 
         &:hover {
@@ -204,6 +204,6 @@
     }
 
     &__next-button {
-        left: 90%;
+        left: 100%;
     }
 }

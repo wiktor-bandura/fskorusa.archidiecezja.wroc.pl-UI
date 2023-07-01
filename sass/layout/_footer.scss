@@ -1,8 +1,23 @@
 .footer {
-    background-image: linear-gradient(to right bottom, $gradient-color, $color-primary);
-    padding: 6rem;
-    color: $font-color-light;
-    text-align: left;
+
+    background-image: linear-gradient(to right bottom, $color-primary, $gradient-color);
+
+    &__wrapper {
+        padding: 6rem;
+        color: $font-color-light;
+        text-align: left;
+        max-width: 1200px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    &__contact-info {
+        
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 3rem;
+    }
 
     &__contact-info-content {
 
