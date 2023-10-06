@@ -3,3 +3,4 @@ package-log.json
 .DS_Store
 css
 .idea
+/js/config.js
